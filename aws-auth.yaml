@@ -1,0 +1,8 @@
+data:
+  mapRoles: |
+    # ...leave whatever is already there...
+  mapUsers: |
+    - userarn: arn:aws:iam::129762072419:user/developer
+      username: developer
+      groups:
+        - developers

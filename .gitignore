@@ -1,0 +1,30 @@
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# State files (contain sensitive info)
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (local changes not for version control)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variable definition files (if they contain secrets)
+*.tfvars
+*.tfvars.json
+
+# VSCode settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

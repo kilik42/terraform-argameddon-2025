@@ -83,7 +83,7 @@ README.md
 ## Notes
 
 * Screenshots of the cluster, apps, and IAM setup will be added here.
-* Partial submissions are okay, but the more effort, the more prepared you’ll be for advanced classes.
+
 
 ---
 

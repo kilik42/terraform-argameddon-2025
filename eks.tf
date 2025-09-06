@@ -52,8 +52,9 @@ resource "aws_eks_cluster" "eks_cluster" {
   vpc_config {
     #we are using both public and private subnets for the EKS cluster
     #this is because we want to use the public subnets for the load balancer
-    endpoint_private_access = true
-    endpoint_public_access  = true
+    endpoint_private_access = false # this has to be false if we want to access the cluster via public endpoint
+    endpoint_public_access  = true # this has to be true if we want to access the cluster via public endpoint
+    #we are using all the subnets in the VPC for the EKS cluster
 
 
     subnet_ids = [

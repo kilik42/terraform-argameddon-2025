@@ -1,0 +1,17 @@
+# the apiVersion and kind fields specify that this is a ClusterRoleBinding resource
+apiVersion: rbac.authorization.k8s.io/v1
+# this line tells what kind of resource we are creating
+kind: ClusterRoleBinding
+# the metadata section contains information about the resource
+metadata:
+  name: viewer-cluster-binding
+# the roleRef section specifies the ClusterRole being referenced
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: viewer-cluster-role
+# the subjects section defines who is granted the permissions defined in the ClusterRole
+subjects:
+- kind: User
+  name: viewer-user
+  apiGroup: rbac.authorization.k8s.io

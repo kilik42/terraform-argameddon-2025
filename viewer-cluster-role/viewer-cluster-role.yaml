@@ -1,0 +1,15 @@
+# this line is added to test git diff
+apiVersion: rbac.authorization.k8s.io/v1
+#this line tells what kind of resource we are creating
+kind: ClusterRole
+# the metadata section contains information about the resource
+metadata:
+  name: viewer-cluster-role
+# the rules section defines the permissions granted by this ClusterRole
+rules:
+- apiGroups: ["*"] # "" indicates the core API group
+  resources: ["pods", "services", "nodes", "namespaces"] # specify the resources to which the permissions apply
+  verbs: ["get", "list", "watch"] # specify the actions that can be performed on the resources
+# this ClusterRole grants read-only access to pods, services, nodes, and namespaces across all API groups
+
+# Note: The above YAML file defines a ClusterRole in Kubernetes that grants read-only access to various resources across all namespaces in the cluster. This role can be used to allow users or service accounts to view these resources without making any modifications.

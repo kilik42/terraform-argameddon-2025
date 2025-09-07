@@ -90,3 +90,4 @@ resource "aws_eks_access_entry" "manager"{
     principal_arn = aws_iam_role.eks_admin.arn
     kubernetes_groups = ["my-admin"]
 }
+

@@ -11,3 +11,8 @@ kubectl apply -f viewer-cluster-role # this applies the folder for binding
  --profile developer
 
  kubectl config view --minify
+
+ aws eks update-kubeconfig \
+  --region us-east-1 \
+  --name staging-my-eks-cluster \
+  --profile eks-manager

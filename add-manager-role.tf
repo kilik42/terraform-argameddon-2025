@@ -79,3 +79,14 @@ resource "aws_iam_policy" "eks_assume_policy" {
     ]
   })
 }
+
+resource "aws_iam_user_policy_attachment" "manager_attach" {
+  user       = aws_iam_user.manager.name
+  policy_arn = aws_iam_policy.eks_assume_policy.arn
+}
+
+resource "aws_eks_access_entry" "manager"{
+    cluster_name =  aws_eks_cluster.eks_cluster.name
+    principal_arn = aws_iam_role.eks_admin.arn
+    kubernetes_groups = ["my-admin"]
+}

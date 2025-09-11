@@ -16,3 +16,8 @@ kubectl apply -f viewer-cluster-role # this applies the folder for binding
   --region us-east-1 \
   --name staging-my-eks-cluster \
   --profile eks-manager
+
+
+kubectl apply -f k8s/app1/
+kubectl apply -f k8s/app2/
+kubectl apply -f k8s/app3/

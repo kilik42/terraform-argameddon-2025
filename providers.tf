@@ -1,6 +1,11 @@
 provider "aws" {
   region = local.region
   profile = "eks-admin" 
+
+  #  assume_role {
+  #   role_arn     = "arn:aws:iam::129762072419:role/staging-my-eks-cluster-manager"
+  #   session_name = "tf"
+  # }
 }
 
 # provider "kubernetes" {

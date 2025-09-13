@@ -62,6 +62,7 @@ resource "aws_iam_role_policy_attachment" "eks_admin_attach" {
 
 resource "aws_iam_user" "manager" {
   name = "manager"
+  force_destroy = true
 }
 
 resource "aws_iam_policy" "eks_assume_policy" {

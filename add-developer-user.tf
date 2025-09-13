@@ -1,5 +1,6 @@
 resource "aws_iam_user" "developer" {
   name = "developer"
+  force_destroy = true
   tags = {
     Name = "developer-user"
   }

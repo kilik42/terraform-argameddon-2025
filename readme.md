@@ -3,7 +3,7 @@
 # Theo University – Class 6: AWS Armageddon
 
 **Start:** July 17 @ 1:00 PM
-**Due:** September 5 @ 1:00 PM
+
 
 This repository documents my work for the **AWS Armageddon project**. The project centers on building and managing cloud infrastructure on AWS using **Terraform** and **Kubernetes (EKS)**. It showcases end-to-end automation: from networking and security to containerized application deployments and monitoring.
 
